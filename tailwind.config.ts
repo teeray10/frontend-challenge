@@ -22,6 +22,6 @@ const config: Config = {
       black: "#111111",
 }
   },
-  plugins: [],
+  plugins: [require('daisyui')],
 };
 export default config;
