@@ -13,13 +13,12 @@ export default function Header() {
     <nav className="navbar bg-base-100">
       <div className="navbar-start">
         <a className="btn btn-ghost text-xl">
-          <Image
-            src="/logo.svg"
-            alt="Reway Logo"
-            className="dark:invert"
-            width={100}
-            height={24}
-            priority
+          <Image src="/logo.svg"
+                 alt="Reway Logo"
+                 className="dark:invert"
+                 width={100}
+                 height={24}
+                 priority
           />
         </a>
         <ul className="menu menu-horizontal px-1 hidden font-medium lg:flex">
@@ -28,8 +27,6 @@ export default function Header() {
           <li><a>EQUIPMENT</a></li>
           <li><a>GIFT</a></li>
         </ul>
-        {/*<div className="w-10">*/}
-        {/*</div>*/}
       </div>
       <div className="navbar-center hidden lg:flex">
 
@@ -61,9 +58,7 @@ export default function Header() {
               d="M4 6h16M4 12h8m-8 6h16"/>
           </svg>
         </div>
-        <ul
-          tabIndex={0}
-          className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+        <ul tabIndex={0} className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
           <li><a>APPARELS</a></li>
           <li><a>SHOES</a></li>
           <li><a>EQUIPMENT</a></li>
