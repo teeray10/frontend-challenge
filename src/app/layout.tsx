@@ -1,12 +1,6 @@
-import type { Metadata } from "next";
 import "./globals.css";
 import Header from '@/app/_components/header';
 import Footer from '@/app/_components/footer';
-
-export const metadata: Metadata = {
-  title: "Dotslash Frontend Challenge - Taylor Ray",
-  description: "A one page prototype built by Taylor Ray as part of a technical assessment for the Dotslash Frontend Developer role.",
-};
 
 export default function RootLayout({
   children,
@@ -16,8 +10,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>{metadata.title}</title>
-        <meta name="description" content={metadata.description} />
+        <title>Dotslash Frontend Challenge - Taylor Ray</title>
+        <meta name="description" content="A one page prototype built by Taylor Ray as part of a technical assessment for the Dotslash Frontend Developer role." />
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet"/>
