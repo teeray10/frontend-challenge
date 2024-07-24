@@ -23,6 +23,7 @@ const config: Config = {
       grey: "#828282",
       dark_grey: "#4A4A4A",
       light_grey: "rgba(130, 130, 130, 0.5)",
+      lightest_grey: "#EAEAEA",
       white: "#FFFFFF",
       black: "#111111",
 }
