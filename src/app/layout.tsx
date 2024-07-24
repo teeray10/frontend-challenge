@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
-import {PT_Sans} from 'next/font/google';
 import "./globals.css";
 import Header from '@/app/_components/header';
 import Footer from '@/app/_components/footer';
-
-const ptSans = PT_Sans({weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,10 +15,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${ptSans.className} min-h-screen`}>
-        <Header />
+      <head>
+        <title>Dotslash Frontend Challenge</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
+      </head>
+      <body className="font-pt_sans min-h-screen">
+        <Header/>
         {children}
-        <Footer />
+        <Footer/>
       </body>
     </html>
   );

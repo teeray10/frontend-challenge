@@ -13,6 +13,10 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        "pt_sans": ["PT Sans", "sans-serif"],
+        "suez": ["Suez One", "serif"]
+      }
     },
     colors: {
       blue: "#00A2FF",

@@ -4,13 +4,10 @@ import {faGift} from '@fortawesome/free-solid-svg-icons/faGift';
 import {faStar} from '@fortawesome/free-regular-svg-icons/faStar';
 import {faHeart} from '@fortawesome/free-regular-svg-icons/faHeart';
 import {faTag} from '@fortawesome/free-solid-svg-icons/faTag';
-import {Suez_One} from 'next/font/google';
-
-const suez = Suez_One({weight: "400", subsets: ["latin"]});
 
 export default function Header() {
   return (
-    <nav className={`${suez.className} navbar bg-base-100`}>
+    <nav className="font-suez navbar bg-base-100">
       <div className="navbar-start">
         <a className="btn btn-ghost text-xl">
           <Image src="/logo.svg"
@@ -38,7 +35,7 @@ export default function Header() {
           <FontAwesomeIcon icon={faHeart} className="w-6 h-5" />
           <FontAwesomeIcon icon={faTag} className="w-6 h-5" />
         </div>
-        <div className={`${suez.className} text-blue text-[17px]`}>
+        <div className="text-blue text-[17px]">
           <button>SIGN UP</button>
           <button className="border-[3px] w-28 h-10 rounded-s">LOGIN</button>
         </div>
