@@ -10,7 +10,7 @@ const suez = Suez_One({weight: "400", subsets: ["latin"]});
 
 export default function Header() {
   return (
-    <nav className="navbar bg-base-100">
+    <nav className={`${suez.className} navbar bg-base-100`}>
       <div className="navbar-start">
         <a className="btn btn-ghost text-xl">
           <Image src="/logo.svg"
@@ -38,7 +38,7 @@ export default function Header() {
           <FontAwesomeIcon icon={faHeart} className="w-6 h-5" />
           <FontAwesomeIcon icon={faTag} className="w-6 h-5" />
         </div>
-        <div className={suez.className + " text-blue text-[17px]"}>
+        <div className={`${suez.className} text-blue text-[17px]`}>
           <button>SIGN UP</button>
           <button className="border-[3px] w-28 h-10 rounded-s">LOGIN</button>
         </div>
