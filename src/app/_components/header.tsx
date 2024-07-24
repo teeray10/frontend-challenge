@@ -29,13 +29,13 @@ export default function Header() {
 
       </div>
       <div className="navbar-end">
-        <div className="flex gap-5 text-grey">
+        <div className="gap-5 text-grey hidden lg:flex">
           <FontAwesomeIcon icon={faGift} className="w-6 h-5" />
           <FontAwesomeIcon icon={faStar} className="w-6 h-5" />
           <FontAwesomeIcon icon={faHeart} className="w-6 h-5" />
           <FontAwesomeIcon icon={faTag} className="w-6 h-5" />
         </div>
-        <div className="text-blue text-[17px]">
+        <div className="text-blue text-[17px] hidden lg:block">
           <button>SIGN UP</button>
           <button className="border-[3px] w-28 h-10 rounded-s">LOGIN</button>
         </div>
