@@ -1,7 +1,7 @@
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons/faMagnifyingGlass';
 import {faChevronLeft} from '@fortawesome/free-solid-svg-icons/faChevronLeft';
-import SelectBox from '@/app/_components/selectBox';
+import SelectBox from '@/app/shoes/_components/selectBox';
 
 const brands = [
   {value: 'superbalist', label: 'SUPERBALIST'},

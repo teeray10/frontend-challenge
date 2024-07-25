@@ -1,7 +1,7 @@
 import {ReactNode} from 'react';
-import SubHeader from '@/app/_components/subHeader';
-import SearchBox from '@/app/_components/searchBox';
-import TopBanner from '@/app/_components/banners/topBanner';
+import SubHeader from '@/app/shoes/_components/subHeader';
+import SearchBox from '@/app/shoes/_components/searchBox';
+import TopBanner from '@/app/shoes/_components/banners/topBanner';
 
 export default function ShoesLayout({children}: Readonly<{children: ReactNode}>) {
   return (
