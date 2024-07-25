@@ -21,7 +21,7 @@ const colours = [
 
 export default function SearchBox() {
   return (
-    <section className="flex flex-col border-blue border-2 pb-5 col-span-full lg:col-span-1 lg:w-96">
+    <section className="flex flex-col border-blue border-2 pb-5">
       <div className="bg-blue text-white flex w-full mb-5 px-5 py-3 gap-2">
         <FontAwesomeIcon icon={faChevronLeft} className="w-3 h-4 mt-1"/>
         <div className="flex flex-col">
