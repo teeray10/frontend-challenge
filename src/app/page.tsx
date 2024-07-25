@@ -1,13 +1,8 @@
-import SubHeader from '@/app/_components/subHeader';
-import SearchBox from '@/app/_components/searchBox';
-
 export default function Home() {
   return (
-    <>
-      <SubHeader />
-      <SearchBox />
-      <main className="bg-white flex min-h-screen flex-col items-center justify-between">
-      </main>
-    </>
+    <section>
+      <h1>Welcome to the home page</h1>
+      <p>To view the working prototype visit the SHOES page</p>
+    </section>
   );
 }

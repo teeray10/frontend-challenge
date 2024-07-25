@@ -1,12 +1,9 @@
 import "./globals.css";
 import Header from '@/app/_components/header';
 import Footer from '@/app/_components/footer';
+import {ReactNode} from 'react';
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({children}: Readonly<{children: ReactNode}>) {
   return (
     <html lang="en">
       <head>
