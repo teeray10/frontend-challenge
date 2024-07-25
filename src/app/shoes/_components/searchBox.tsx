@@ -21,7 +21,7 @@ const colours = [
 
 export default function SearchBox() {
   return (
-    <section className="flex flex-col border-blue border-2 pb-5 lg:w-96">
+    <section className="flex flex-col border-blue border-2 pb-5 col-span-full lg:col-span-1 lg:w-96">
       <div className="bg-blue text-white flex w-full mb-5 px-5 py-3 gap-2">
         <FontAwesomeIcon icon={faChevronLeft} className="w-3 h-4 mt-1"/>
         <div className="flex flex-col">
@@ -35,10 +35,10 @@ export default function SearchBox() {
 
       <div className="flex flex-col px-5">
         <p className="text-grey text-opacity-50 font-bold ml-2">BRANDS</p>
-        <SelectBox items={brands} />
+        <SelectBox items={brands} isMulti={true} />
 
         <p className="text-grey text-opacity-50 font-bold ml-2">COLOUR</p>
-        <SelectBox items={colours}/>
+        <SelectBox items={colours} isMulti={true} />
       </div>
 
       <button className="bg-blue text-white font-suez flex gap-2 items-center py-4 px-6 w-fit mx-auto">

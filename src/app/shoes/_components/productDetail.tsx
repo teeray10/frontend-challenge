@@ -5,7 +5,7 @@ import {faTag} from '@fortawesome/free-solid-svg-icons/faTag';
 export default function ProductDetail({product}: any) {
   const discountPercentage = Math.round((product.price - product.salePrice) / product.price * 100);
   return (
-    <section className="border-blue border-[6px] p-5 text-grey lg:ml-8">
+    <section className="border-blue border-[6px] p-5 text-grey">
       <h4 className="font-suez text-xl uppercase text-black">{product.name}</h4>
       <div className="flex items-center gap-1 text-light_grey text-xs uppercase">
         <FontAwesomeIcon icon={faShop} className="w-3 h-3"/>

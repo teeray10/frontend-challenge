@@ -7,10 +7,8 @@ export default function ShoesLayout({children}: Readonly<{children: ReactNode}>)
   return (
     <section className="grid grid-cols-4">
       <SubHeader />
-      <div className="col-span-full lg:col-span-1">
-        <SearchBox />
-      </div>
-      <div className="col-span-full lg:col-span-3">
+      <SearchBox />
+      <div className="col-span-full lg:col-span-3 2xl:mx-20">
         <TopBanner />
         <main>
           {children}

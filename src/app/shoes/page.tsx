@@ -6,6 +6,7 @@ import shoe3 from '@/app/_assets/products/shoe3.png';
 import shoe4 from '@/app/_assets/products/shoe4.png';
 import shoe5 from '@/app/_assets/products/shoe5.png';
 import ProductDetail from '@/app/shoes/_components/productDetail';
+import AddToCart from '@/app/shoes/_components/addToCart';
 
 const productImages = [
   {
@@ -43,11 +44,14 @@ const product = {
 
 export default function Shoes() {
   return (
-    <main className="p-2 lg:py-0 lg:px-10 lg:mt-10">
+    <main className="p-2 lg:py-0 lg:mt-10">
       <Breadcrumbs />
       <section className="grid lg:grid-cols-2">
         <Carousel items={productImages}/>
-        <ProductDetail product={product}/>
+        <section className="flex flex-col gap-3 lg:ml-8">
+          <ProductDetail product={product}/>
+          <AddToCart />
+        </section>
       </section>
     </main>
   );

@@ -26,10 +26,10 @@ const styles: StylesConfig = {
   })
 }
 
-export default function SelectBox({items}: any) {
+export default function SelectBox({items, isMulti}: any) {
   return (
     <Select
-      isMulti
+      isMulti={isMulti}
       isSearchable={false}
       options={items}
       className="basic-multi-select mb-5"
