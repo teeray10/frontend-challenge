@@ -1,32 +1,28 @@
 import Breadcrumbs from '@/app/shoes/_components/breadcrumbs';
 import Carousel from '@/app/shoes/_components/carousel';
-import shoe1 from '@/app/_assets/products/shoe.png';
-import shoe2 from '@/app/_assets/products/shoe2.png';
-import shoe3 from '@/app/_assets/products/shoe3.png';
-import shoe4 from '@/app/_assets/products/shoe4.png';
-import shoe5 from '@/app/_assets/products/shoe5.png';
 import ProductDetail from '@/app/shoes/_components/productDetail';
 import AddToCart from '@/app/shoes/_components/addToCart';
+import RelatedProducts from '@/app/shoes/_components/relatedProducts';
 
 const productImages = [
   {
-    src: shoe1,
+    src: '/products/shoe.png',
     alt: 'Shoe 1',
   },
   {
-    src: shoe2,
+    src: '/products/shoe2.png',
     alt: 'Shoe 2',
   },
   {
-    src: shoe3,
+    src: '/products/shoe3.png',
     alt: 'Shoe 3',
   },
   {
-    src: shoe4,
+    src: '/products/shoe4.png',
     alt: 'Shoe 4',
   },
   {
-    src: shoe5,
+    src: '/products/shoe5.png',
     alt: 'Shoe 5',
   }
 ]
@@ -52,6 +48,7 @@ export default function Shoes() {
           <ProductDetail product={product}/>
           <AddToCart />
         </section>
+        <RelatedProducts />
       </section>
     </main>
   );

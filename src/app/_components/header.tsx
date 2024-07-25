@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faGift} from '@fortawesome/free-solid-svg-icons/faGift';
 import {faStar} from '@fortawesome/free-regular-svg-icons/faStar';
@@ -10,12 +9,9 @@ export default function Header() {
     <nav className="font-suez navbar bg-base-100">
       <div className="navbar-start">
         <a className="btn btn-ghost text-xl">
-          <Image src="/logo.svg"
+          <img src="/logo.svg"
                  alt="Reway Logo"
                  className="dark:invert"
-                 width={100}
-                 height={24}
-                 priority
           />
         </a>
         <ul className="menu menu-horizontal px-1 hidden font-medium lg:flex">
