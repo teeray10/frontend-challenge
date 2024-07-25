@@ -26,8 +26,8 @@ export default function Footer() {
       <div>
         <h4 className="font-suez text-xl mb-2">Follow Us!</h4>
         <div className="flex flex-row justify-center gap-5 text-white lg:gap-10">
-          <FontAwesomeIcon icon={faSquareFacebook} className="w-6 lg:w-8" />
-          <FontAwesomeIcon icon={faInstagram} className="w-6 lg:w-8" />
+          <FontAwesomeIcon icon={faSquareFacebook} className="w-6 h-6 lg:w-9 lg:h-9" />
+          <FontAwesomeIcon icon={faInstagram} className="w-6 h-6 lg:w-9 lg:h-9" />
         </div>
       </div>
     </footer>

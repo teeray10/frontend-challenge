@@ -26,7 +26,7 @@ export default function SearchBox() {
         <FontAwesomeIcon icon={faChevronLeft} className="w-3 h-4 mt-1"/>
         <div className="flex flex-col">
           <p>Hide</p>
-          <div className="flex gap-3">
+          <div className="flex items-center gap-3">
             <h4 className="font-suez text-xl">SEARCH REWAY</h4>
             <FontAwesomeIcon icon={faMagnifyingGlass} className="w-5"/>
           </div>
