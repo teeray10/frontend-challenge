@@ -14,7 +14,7 @@ export default function ShoesLayout({children}: Readonly<{children: ReactNode}>)
         <SideBanner />
         <MailingList />
       </div>
-      <div className="col-span-full lg:col-span-3 2xl:mx-20">
+      <div className="col-span-full mx-2 lg:col-span-3 2xl:mx-20">
         <TopBanner />
         <main>
           {children}
