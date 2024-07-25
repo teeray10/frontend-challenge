@@ -10,7 +10,7 @@ export default function ShoesLayout({children}: Readonly<{children: ReactNode}>)
       <div className="col-span-full lg:col-span-1">
         <SearchBox />
       </div>
-      <div className="col-span-full lg:col-span-3 lg:px-52">
+      <div className="col-span-full lg:col-span-3">
         <TopBanner />
         <main>
           {children}
