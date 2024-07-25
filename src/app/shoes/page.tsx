@@ -40,11 +40,11 @@ const product = {
 
 export default function Shoes() {
   return (
-    <main className="p-2 lg:py-0 lg:mt-10">
+    <main className="mx-2 my-5 lg:py-0 lg:mt-10">
       <Breadcrumbs />
-      <section className="grid lg:grid-cols-2">
+      <section className="grid lg:grid-cols-2 mt-5">
         <Carousel items={productImages}/>
-        <section className="flex flex-col gap-3 lg:ml-8">
+        <section className="flex flex-col gap-5 lg:ml-8">
           <ProductDetail product={product}/>
           <AddToCart />
         </section>
