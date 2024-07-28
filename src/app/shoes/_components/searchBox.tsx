@@ -45,7 +45,7 @@ export default function SearchBox() {
         <RangeSlider />
       </form>
 
-      <button className="bg-blue text-white font-suez flex gap-2 items-center py-4 px-6 w-fit mx-auto">
+      <button className="bg-blue text-white font-suez flex gap-2 items-center py-4 px-6 w-fit mx-auto outline-[3px] outline-blue hover:text-blue hover:outline hover:bg-white">
         <FontAwesomeIcon icon={faMagnifyingGlass} className="w-3" />
         SEARCH
       </button>

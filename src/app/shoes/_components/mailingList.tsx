@@ -14,7 +14,7 @@ export default function MailingList() {
         <input type="text" placeholder="ENTER EMAIL ADDRESS" className="w-full py-2 px-3 text-grey" />
       </div>
 
-      <button className="bg-white text-blue font-suez text-xl px-12 py-4">SUBMIT</button>
+      <button className="bg-white text-blue font-suez text-xl px-12 py-4 outline-[3px] outline-white hover:outline hover:text-white hover:bg-blue">SUBMIT</button>
     </div>
   )
 }

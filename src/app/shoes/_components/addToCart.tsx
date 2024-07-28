@@ -30,7 +30,7 @@ export default function AddToCart() {
       <p className="text-grey text-opacity-50 font-bold ml-2">QUANTITY</p>
       <SelectBox items={quantities} isMulti={false} placeholder="SELECT QUANITY" />
 
-      <button className="bg-blue text-white font-suez lg:text-xl xl:text-3xl p-5 text-nowrap mx-auto flex items-center gap-3 w-fit outline-[3px] outline-blue hover:text-blue hover:outline hover:rounded-md hover:bg-white">
+      <button className="bg-blue text-white font-suez lg:text-xl xl:text-3xl p-5 text-nowrap mx-auto flex items-center gap-3 w-fit outline-[3px] outline-blue hover:text-blue hover:outline hover:bg-white">
         <FontAwesomeIcon icon={faCartPlus} className="w-8 h-5" />
         ADD TO CART
       </button>

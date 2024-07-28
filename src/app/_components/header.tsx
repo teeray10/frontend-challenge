@@ -28,9 +28,9 @@ export default function Header() {
       </Link>
       <ul className="hidden font-medium gap-3 lg:flex lg:gap-8 hover:*:text-blue hover:*:cursor-pointer">
         {
-          links?.map((link, index) => (
+          links?.map((link) => (
             <li key={link.name}>
-              <Link href={`/${link.name}`} className={`uppercase ${isActiveLink(link.name) ? 'text-blue' : ''}`}>{link.name}</Link>
+              <Link href={`/${link.name}`} scroll={false} className={`uppercase ${isActiveLink(link.name) ? 'text-blue' : ''}`}>{link.name}</Link>
             </li>
           ))
         }
@@ -63,9 +63,9 @@ export default function Header() {
         <div className="dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-3 shadow flex flex-col">
           <ul className="flex flex-col gap-1">
             {
-              links?.map((link, index) => (
+              links?.map((link) => (
                 <li key={link.name}>
-                  <Link href={`/${link.name}`} className={`uppercase ${isActiveLink(link.name) ? 'text-blue' : ''}`}>{link.name}</Link>
+                  <Link href={`/${link.name}`} scroll={false} className={`uppercase ${isActiveLink(link.name) ? 'text-blue' : ''}`}>{link.name}</Link>
                 </li>
               ))
             }
