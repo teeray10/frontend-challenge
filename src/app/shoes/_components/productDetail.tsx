@@ -11,7 +11,7 @@ export default function ProductDetail({product}: any) {
         <FontAwesomeIcon icon={faShop} className="w-3 h-3"/>
         <p>{product.vendor}</p>
       </div>
-      <div className="grid grid-cols-2 py-5 w-2/3 ml-5">
+      <div className="grid grid-cols-2 py-5 w-full xl:w-2/3 ml-5">
         <p>Fabrication</p>
         <p className="text-black font-bold">{product.fabrication}</p>
         <p>Colour</p>

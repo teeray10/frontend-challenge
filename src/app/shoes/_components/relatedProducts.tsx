@@ -46,7 +46,7 @@ export default function RelatedProducts() {
         <h4 className="font-suez text-nowrap">MORE FROM <span className="text-blue">BOOTS</span></h4>
         <div className="h-0.5 w-full bg-grey"></div>
       </div>
-      <div className="grid grid-cols-2 gap-5 items-stretch lg:gap-10 lg:grid-cols-3">
+      <div className="grid grid-cols-2 gap-5 items-stretch lg:gap-10 md:grid-cols-3">
         {
           products?.map((product: any, index: number) => <ProductThumbnail product={product} key={index} />)
         }

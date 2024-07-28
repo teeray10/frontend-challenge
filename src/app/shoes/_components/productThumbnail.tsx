@@ -15,7 +15,7 @@ export default function ProductThumbnail({product}: any) {
           <img src={product.src} alt={product.name} />
           {
             discountPercentage &&
-            <span className="absolute top-0 right-0 flex items-center w-fit h-fit bg-blue text-white rounded-md py-1 px-2 italic font-bold text-sm lg:text-lg">
+            <span className="absolute top-0 right-0 flex items-center w-fit h-fit bg-blue text-white rounded-md py-1 px-2 italic font-bold text-sm md:top-2 md:right-2 lg:text-lg">
               <FontAwesomeIcon icon={faTag} className="w-5 h-5 mr-1"/>{discountPercentage}% Off
             </span>
           }
