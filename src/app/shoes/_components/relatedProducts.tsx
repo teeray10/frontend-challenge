@@ -41,7 +41,7 @@ export default function RelatedProducts() {
   ]
 
   return (
-    <section className="col-span-full mt-5">
+    <section className="col-span-full">
       <div className="flex items-center gap-2 mb-5">
         <h4 className="font-suez text-nowrap">MORE FROM <span className="text-blue">BOOTS</span></h4>
         <div className="h-0.5 w-full bg-grey"></div>

@@ -10,7 +10,7 @@ export default function Carousel({items}: any) {
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   return (
-    <section className="col-span-1 select-none mb-5">
+    <section className="col-span-1 select-none">
       <div className="carousel w-full mb-4">
         {
           items?.map((item: any, index: number) => (

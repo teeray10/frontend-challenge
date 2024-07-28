@@ -35,7 +35,7 @@ export default function ProductThumbnail({product}: any) {
           <p className="font-suez text-blue text-xl">R {product.salePrice || product.price}</p>
           <a className="flex items-center font-bold text-sm">
             View
-            <FontAwesomeIcon icon={faArrowRight} className="w-4 h-4 ml-3"/>
+            <FontAwesomeIcon icon={faArrowRight} className="w-4 h-4 ml-1 md:ml-3"/>
           </a>
         </div>
       </div>

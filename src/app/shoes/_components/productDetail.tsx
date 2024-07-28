@@ -24,7 +24,6 @@ export default function ProductDetail({product}: any) {
 
       <div className="mt-3 ml-5">
         <p className="text-xs">PRODUCT DETAILS</p>
-
         <ul className="text-sm">
           {product.details?.map((detail: any, index: number) => <li className="ml-4 list-disc" key={index}>{detail}</li>)}
         </ul>
@@ -40,7 +39,6 @@ export default function ProductDetail({product}: any) {
           <p className="font-suez text-black text-3xl">R {product.salePrice}</p>
         </div>
       </div>
-
     </section>
   )
 }
