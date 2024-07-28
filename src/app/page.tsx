@@ -1,8 +1,10 @@
+import Link from 'next/link';
+
 export default function Home() {
   return (
-    <section>
+    <section className="p-10 text-center">
       <h1>Welcome to the home page</h1>
-      <p>To view the working prototype visit the SHOES page</p>
+      <p>To view the working prototype visit the <Link href="/shoes" className="text-blue font-bold">SHOES</Link> page</p>
     </section>
   );
 }
