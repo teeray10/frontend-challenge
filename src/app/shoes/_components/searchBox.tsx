@@ -35,10 +35,10 @@ export default function SearchBox() {
 
       <div className="flex flex-col px-5">
         <p className="text-grey text-opacity-50 font-bold ml-2">BRANDS</p>
-        <SelectBox items={brands} isMulti={true} />
+        <SelectBox items={brands} isMulti={true} placeholder="SELECT BRAND" />
 
         <p className="text-grey text-opacity-50 font-bold ml-2">COLOUR</p>
-        <SelectBox items={colours} isMulti={true} />
+        <SelectBox items={colours} isMulti={true} placeholder="SELECT COLOUR" />
       </div>
 
       <button className="bg-blue text-white font-suez flex gap-2 items-center py-4 px-6 w-fit mx-auto">

@@ -3,6 +3,18 @@
 import Select, {StylesConfig} from 'react-select';
 
 const styles: StylesConfig = {
+  singleValue: (styles) => {
+    return {
+      ...styles,
+      color: '#828282'
+    }
+  },
+  option: (styles, {isSelected}) => {
+    return {
+      ...styles,
+      color: isSelected ? '#FFFFFF' : '#828282'
+    }
+  },
   multiValue: (styles) => {
     return {
       ...styles,
@@ -26,7 +38,7 @@ const styles: StylesConfig = {
   })
 }
 
-export default function SelectBox({items, isMulti}: any) {
+export default function SelectBox({items, isMulti, placeholder}: any) {
   return (
     <Select
       isMulti={isMulti}
@@ -34,6 +46,7 @@ export default function SelectBox({items, isMulti}: any) {
       options={items}
       className="basic-multi-select mb-5"
       classNamePrefix="select"
+      placeholder={placeholder}
       styles={styles}
     />
   )
