@@ -3,6 +3,12 @@
 import Select, {StylesConfig} from 'react-select';
 
 const styles: StylesConfig = {
+  control: (styles) => {
+    return {
+      ...styles,
+      cursor: 'pointer'
+    }
+  },
   singleValue: (styles) => {
     return {
       ...styles,
