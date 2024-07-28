@@ -27,7 +27,7 @@ export default function Header() {
              className="dark:invert"
         />
       </Link>
-      <ul className="hidden font-medium gap-3 md:flex lg:gap-8 hover:*:text-blue hover:*:cursor-pointer">
+      <ul className="hidden font-medium gap-3 lg:flex lg:gap-8 hover:*:text-blue hover:*:cursor-pointer">
         {
           links?.map((link, index) => (
             <li key={link.name}>
@@ -36,17 +36,17 @@ export default function Header() {
           ))
         }
       </ul>
-      <div className="gap-2 text-grey hidden md:flex lg:gap-5">
+      <div className="gap-2 text-grey hidden lg:flex lg:gap-5">
         <FontAwesomeIcon icon={faGift} className="w-6 h-5 cursor-pointer hover:text-blue" />
         <FontAwesomeIcon icon={faStar} className="w-6 h-5 cursor-pointer hover:text-blue" />
         <FontAwesomeIcon icon={faHeart} className="w-6 h-5 cursor-pointer hover:text-blue" />
         <FontAwesomeIcon icon={faTag} className="w-6 h-5 cursor-pointer hover:text-blue" />
       </div>
-      <div className="text-blue text-[17px] hidden md:inline">
+      <div className="text-blue text-[17px] hidden lg:inline">
         <button>SIGN UP</button>
         <button className="border-[3px] border-blue w-28 h-10 rounded-md ml-3 lg:ml-8">LOGIN</button>
       </div>
-      <div className="dropdown dropdown-end md:hidden">
+      <div className="dropdown dropdown-end lg:hidden">
         <div tabIndex={0} role="button" className="btn btn-ghost">
           <svg
             xmlns="http://www.w3.org/2000/svg"
