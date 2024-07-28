@@ -15,7 +15,7 @@ export default function Carousel({items}: any) {
         {
           items?.map((item: any, index: number) => (
             <div key={index} className={`carousel-item relative w-full cursor-zoom-in ${selectedIndex == index ? 'block' : 'hidden'}`}>
-              <img src={item.src} alt={item.alt} className="w-full object-cover hidden lg:block" onClick={() => document?.getElementById('image-modal')?.showModal()}/>
+              <img src={item.src} alt={item.alt} className="w-full object-cover hidden lg:block" onClick={() => (document?.getElementById('image-modal') as any)?.showModal()}/>
               <img src={item.src} alt={item.alt} className="w-full object-cover lg:hidden"/>
               <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                 <FontAwesomeIcon icon={faChevronLeft} className="w-3 cursor-pointer" onClick={() => setSelectedIndex(index > 0 ? --index : items.length - 1)}/>
