@@ -2,6 +2,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons/faMagnifyingGlass';
 import {faChevronLeft} from '@fortawesome/free-solid-svg-icons/faChevronLeft';
 import SelectBox from '@/app/shoes/_components/selectBox';
+import RangeSlider from '@/app/shoes/_components/rangeSlider';
 
 const brands = [
   {value: 'superbalist', label: 'SUPERBALIST'},
@@ -33,13 +34,16 @@ export default function SearchBox() {
         </div>
       </div>
 
-      <div className="flex flex-col px-5">
+      <form className="flex flex-col px-5">
         <p className="text-grey text-opacity-50 font-bold ml-2">BRANDS</p>
-        <SelectBox items={brands} isMulti={true} placeholder="SELECT BRAND" />
+        <SelectBox items={brands} isMulti={true} placeholder="SELECT BRAND"/>
 
         <p className="text-grey text-opacity-50 font-bold ml-2">COLOUR</p>
-        <SelectBox items={colours} isMulti={true} placeholder="SELECT COLOUR" />
-      </div>
+        <SelectBox items={colours} isMulti={true} placeholder="SELECT COLOUR"/>
+
+        <p className="text-grey text-opacity-50 font-bold ml-2">PRICING</p>
+        <RangeSlider />
+      </form>
 
       <button className="bg-blue text-white font-suez flex gap-2 items-center py-4 px-6 w-fit mx-auto">
         <FontAwesomeIcon icon={faMagnifyingGlass} className="w-3" />

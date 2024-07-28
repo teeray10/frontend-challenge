@@ -8,7 +8,6 @@ import ImageThumbnail from '@/app/shoes/_components/imageThumbnail';
 
 export default function Carousel({items}: any) {
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const [showModal, setShowModal] = useState(false);
 
   return (
     <section className="col-span-1 select-none ">
@@ -17,7 +16,6 @@ export default function Carousel({items}: any) {
           items?.map((item: any, index: number) => (
             <div key={index} className={`carousel-item relative w-full cursor-zoom-in ${selectedIndex == index ? 'block' : 'hidden'}`}>
               <img src={item.src} alt={item.alt} className="w-full object-cover hidden lg:block" onClick={() => document?.getElementById('image-modal')?.showModal()}/>
-              {/*<img src={item.src} alt={item.alt} className="w-full object-cover hidden lg:block" onClick={() => setShowModal(true)}/>*/}
               <img src={item.src} alt={item.alt} className="w-full object-cover lg:hidden"/>
               <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
                 <FontAwesomeIcon icon={faChevronLeft} className="w-3 cursor-pointer" onClick={() => setSelectedIndex(index > 0 ? --index : items.length - 1)}/>
@@ -39,7 +37,7 @@ export default function Carousel({items}: any) {
           <form method="dialog">
             <button className="absolute right-5">Close</button>
           </form>
-          <img src={items[0].src} alt={items[0].alt} className="h-full"/>
+          <img src={items[selectedIndex].src} alt={items[selectedIndex].alt} className="h-full"/>
         </div>
       </dialog>
     </section>
