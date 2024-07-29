@@ -42,7 +42,7 @@ export default function Header() {
         <FontAwesomeIcon icon={faTag} className="w-6 h-5 cursor-pointer hover:text-blue" />
       </div>
       <div className="text-blue text-[17px] hidden lg:inline">
-        <button className="hover:outline outline-[3px] outline-blue rounded-md w-24 h-10">SIGN UP</button>
+        <button className="hover:outline outline-[3px] outline-blue rounded-md w-24 h-9 px-1">SIGN UP</button>
         <button className="border-[3px] border-blue w-28 h-10 rounded-md ml-3 lg:ml-8 hover:text-white hover:border-transparent hover:bg-blue">LOGIN</button>
       </div>
       <div className="dropdown dropdown-end lg:hidden">
